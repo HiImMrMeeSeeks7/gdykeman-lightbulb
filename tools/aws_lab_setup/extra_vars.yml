@@ -1,0 +1,9 @@
+ec2_key_name: ansible-ps                # SSH key in AWS to put in all the instances
+ec2_region: us-east-1                 # region where the nodes will live
+ec2_name_prefix: Workshop        # name prefix for all the VMs
+ec2_vpc_id: vpc-2a994a4c             # EC2 VPC ID in your region
+ec2_vpc_subnet_id: subnet-b70447fe    # EC2 subnet ID in your VPC
+sendgrid_user: gdykeman               # username for the Sendgrid module
+sendgrid_pass: 'ansible123'     # sendgrid accound password
+instructor_email: 'Ansible Instructor <gdykeman@redhat.com>'  # address you want the emails to arrive from
+admin_password: ansible123           # Set this to something better if you'd like. Defaults to 'LearnAnsible[two digit month][two digit year]', e.g., LearnAnsible0416
