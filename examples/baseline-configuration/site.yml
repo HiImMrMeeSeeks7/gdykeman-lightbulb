@@ -8,6 +8,10 @@
       - vim
       - git
       - python-pip
+      - unzip
+      - java-1.7.0-openjdk
+      - libselinux-python
+      - libsemanage-python
     httpd_packages:
       - httpd
       - mod_wsgi
@@ -32,12 +36,6 @@
         state: latest
       with_items: "{{ httpd_packages }}"
       notify: restart apache service
-
-    - name: Install Ansible
-      pip:
-        name:
-          - 'git+https://github.com/ansible/ansible.git@devel'
-        state: latest
 
     - name: site-enabled directory is present
       file:
