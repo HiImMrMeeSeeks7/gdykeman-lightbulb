@@ -24,7 +24,7 @@
       yum:
         name: "{{ item }}"
         state: latest
-      with_items: "{{ httpd_packages }}"
+      with_items: "{{ base_packages }}"
 
     - name: httpd packages are present
       yum:
