@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  name: This is a play within a playbook
+  name: Baseline Apache Configuration
   become: yes
   vars:
     epel: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
@@ -19,7 +19,7 @@
       yum:
         name: "{{epel}}"
         state: present
-        
+
     - name: base packages are present
       yum:
         name: "{{ item }}"
