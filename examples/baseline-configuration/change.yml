@@ -10,8 +10,8 @@
       - python-pip
       - unzip
       - java-1.7.0-openjdk
-      - libselinux-python
-      - libsemanage-python
+      # - libselinux-python
+      # - libsemanage-python
     httpd_packages:
       - httpd
       - mod_wsgi
