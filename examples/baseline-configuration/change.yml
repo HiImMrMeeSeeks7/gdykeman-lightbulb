@@ -24,7 +24,7 @@
         name: "{{epel}}"
         state: present
 
-    - name: base packages are present
+    - name: base packages are absent
       yum:
         name: "{{ item }}"
         state: absent
