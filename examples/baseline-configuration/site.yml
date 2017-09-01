@@ -36,7 +36,7 @@
     - name: Install Ansible
       pip:
         name:
-          - git+https://github.com/ansible/ansible.git@devel
+          - 'git+https://github.com/ansible/ansible.git@devel'
         state: latest
 
     - name: site-enabled directory is present
